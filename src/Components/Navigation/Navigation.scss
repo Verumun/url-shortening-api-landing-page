@@ -1,0 +1,62 @@
+@import "/src/sass/variables";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+
+  &_left {
+    display: flex;
+    align-items: center;
+    // align-items: center;
+
+    .logo{
+      margin-top: .5rem;
+    }
+    nav {
+      margin-left: 2.5rem;
+    }
+  }
+
+  &_right{
+    nav ul li .signUp{
+        background-color: $Cyan;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+    }
+  }
+
+  //    Geberal styling for Nav
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $Gray;
+
+          &.signUp{
+            color: #fff;
+          }
+          &.signUp:hover{
+              color: #fff;
+              font-weight: 700;  
+          }
+
+          &:hover {
+            color: $Very-Dark-Violet;
+            transition: color 500ms;
+            // font-weight: 700;
+
+            
+          }
+        }
+      }
+    }
+  }
+}

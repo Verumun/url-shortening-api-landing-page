@@ -1,0 +1,24 @@
+@import '../../sass/variables';
+
+
+.main{
+    padding: 3rem 10rem;
+    background-color: $Light-Blue;
+    // margin-top: 10rem;
+
+    .header-content{
+        text-align: center;
+        margin-top: 5rem;
+        
+        h2{
+            width: 50%; 
+            margin-inline: auto;
+        }  
+        p{
+            width: 50%;
+            margin-inline: auto;
+        }
+    }   
+    
+    
+}
