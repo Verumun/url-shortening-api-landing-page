@@ -18,6 +18,7 @@ function main() {
       </div>
 
       <Cards/>
+
     </div>
   );
 }

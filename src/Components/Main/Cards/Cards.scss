@@ -1,0 +1,73 @@
+@import '../../../sass/variables';
+
+.cards{
+    display: flex;
+    gap: 1.5rem;
+    margin: 5rem 0;
+
+    
+    
+    
+
+    .card{
+        background-color: #fff;
+        padding: 2rem;
+        // border-radius: .5rem;
+        height: fit-content;
+        
+        
+
+        .image{
+            margin-top: -4rem;
+            padding-bottom: 1.8rem;
+
+            img{
+                
+                background-color: $Dark-Violet;
+                padding: 1rem;
+                border-radius: 50%;
+
+            }
+        }
+
+
+        &:nth-child(2){
+            margin-top: 3rem;
+            position: relative;
+            
+            
+        
+            &::before, &::after{
+                content: '';
+                width: 1.5rem;
+                height: .5rem;
+                background-color: $Cyan;
+                position: absolute;
+                top: 7rem;
+            }
+
+            &::before{
+                left: -1.5rem;
+            }
+
+            &::after{
+                right: -1.5rem;
+                
+            }
+        }
+
+        &:nth-child(3){
+            margin-top: 6rem;
+        }
+
+        .content{
+            padding-bottom: 1rem;
+            h4{
+                margin-bottom: 1rem;
+                color: $Very-Dark-Violet
+            }
+            
+        }
+        
+    }
+}
