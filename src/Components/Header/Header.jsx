@@ -24,7 +24,7 @@ function Header() {
           <a className='button-radius' href="#">Get Started</a>
         </div>
 
-        <div>
+        <div className='image-wrapper'>
           <img src={illustration} alt="" />
         </div>
 

@@ -1,9 +1,18 @@
 import React from 'react'
 // import logo from '/src/images/illustration-working.svg'
+// import navToggle from '../../images/'
 import logo from '../../images/logo.svg'
 import './Navigation.scss'
 
 const Navigation =() => {
+
+    // const toggleButtonEl = document.getElementById('toggleButton');
+    // const mobileNav = document.getElementById('mobile-nav');
+
+    // toggleButtonEl.addEventListener('click', function(){
+    //     console.log('vll')
+    // })
+
   return (
     <div className='navigation'>
         <div className='navigation_left'>
@@ -29,7 +38,36 @@ const Navigation =() => {
                 </ul>
             </nav>
         </div>
+
+        {/* <i className='  fa-solid fa-bars'></i> */}
+        {/* <div className='Nav-toggle'><img src={navToggle} alt="" /></div> */}
+        
+        {/* ----------MOBILE NAVIGATION-------- */}
+        <div className="navigation__mobile" id='mobile-nav'>
+            <div className='logo'>
+                <img src={logo}></img>
+            </div>
+
+            <div className="navigate">
+            {/* <i className='fa-solid fa-bars'></i> */}
+
+            <i className='fa-solid fa-bars' id='toggleButton'></i>
+                <nav>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li ><a href="#" className='signUp button-radius'>Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
     </div>
+
+    
   )
 }
 
