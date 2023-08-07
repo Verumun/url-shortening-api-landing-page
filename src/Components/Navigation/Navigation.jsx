@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRef } from 'react'
 // import logo from '/src/images/illustration-working.svg'
 // import navToggle from '../../images/'
 import logo from '../../images/logo.svg'
@@ -6,6 +7,10 @@ import './Navigation.scss'
 
 const Navigation =() => {
 
+    const navRef = useRef();
+    const showMobileNav = ()=>{
+        navRef.current.classList.toggle("responsive_nav")
+    }
     // const toggleButtonEl = document.getElementById('toggleButton');
     // const mobileNav = document.getElementById('mobile-nav');
 
@@ -51,8 +56,8 @@ const Navigation =() => {
             <div className="navigate">
             {/* <i className='fa-solid fa-bars'></i> */}
 
-            <i className='fa-solid fa-bars' id='toggleButton'></i>
-                <nav>
+            <i onClick={showMobileNav} className='fa-solid fa-bars' id='toggleButton'></i>
+                <nav ref={navRef}>
                     <ul>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>

@@ -1,5 +1,10 @@
 @import "/src/sass/variables";
 
+.responsive_nav{
+  display: none;
+  
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -146,6 +151,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      
 
       .navigate{
 
@@ -158,6 +164,7 @@
           background-color: $Very-Dark-Blue;
           padding: 2rem 1rem;
           border-radius: .5rem;
+          
 
           ul{
             flex-direction: column;
