@@ -57,7 +57,7 @@ const Navigation =() => {
             {/* <i className='fa-solid fa-bars'></i> */}
 
             <i onClick={showMobileNav} className='fa-solid fa-bars' id='toggleButton'></i>
-                <nav ref={navRef}>
+                <nav ref={navRef} className="responsive_nav">
                     <ul>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>

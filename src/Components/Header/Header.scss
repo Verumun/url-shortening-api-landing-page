@@ -110,9 +110,29 @@ section.landing{
 
             img{
                 width: 55rem;
+                transition: width 500ms;
             }
             
             
+        }
+    }
+}
+
+@media (max-width:768px){
+    section.landing{
+        padding: 0rem 2rem 3rem 2rem;
+    }
+}
+
+@media (max-width: 600px){
+    section.landing{
+        .image-wrapper{
+            margin-right: 0;
+            
+            img{
+                width: 30rem;
+                transition: width 500ms;
+            }
         }
     }
 }

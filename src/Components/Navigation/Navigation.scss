@@ -1,9 +1,9 @@
 @import "/src/sass/variables";
 
-.responsive_nav{
-  display: none;
+// .responsive_nav{
+//   display: none;
   
-}
+// }
 
 .navigation {
   display: flex;
@@ -13,6 +13,9 @@
 
   .fa-bars{
     display: none;
+    font-size: 2rem;
+    color: $Gray;
+    font-weight: bold;
   }
 
   &__mobile{
@@ -135,6 +138,11 @@
    
   // }
 
+  .responsive_nav{
+    display: none;
+    
+  }
+
   .navigation{
     justify-content: unset;
     &_left, &_right{
@@ -156,6 +164,7 @@
       .navigate{
 
         nav{
+          // display: none;
           position: absolute;
           left: 50%;
           transform: translate(-50%);
@@ -187,7 +196,8 @@
 
             a{
               display: block;
-              padding: 1rem 0;
+              padding: .5rem 0;
+              color: #fff;
 
               &.signUp{
                 // padding: ;
@@ -200,4 +210,20 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .navigation{
+    padding: 3rem 5rem;
+    transition: padding 500ms;
+  }
+}
+
+@media (max-width: 480px){
+  .navigation{
+
+    padding: 3rem 1rem;
+  }
+}
+
+
 

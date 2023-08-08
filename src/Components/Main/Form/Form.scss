@@ -46,3 +46,18 @@
         }
     }
   }
+
+  @media (max-width: 768px){
+    form{
+        flex-direction: column;
+
+        .input-control{
+            width: 100% !important;
+        }
+
+        button{
+            width: 100% !important;
+            // display: inline;
+        }
+    }
+  }

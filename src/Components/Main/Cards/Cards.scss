@@ -71,3 +71,33 @@
         
     }
 }
+
+@media (max-width:680px){
+    .cards{
+        flex-direction: column;
+        // transition: column 500ms;
+        // align-items: center;
+        text-align: center;
+
+        .card{
+         
+            &:nth-child(2){
+                &::after, &::before{
+                    width: 0.5rem;
+                    height: 2.5rem;
+                }
+                &::after{
+                    // left: -;
+                    right: 0;
+                    // left: 5rem;
+                    // right: 8rem;
+                    top: -4.5rem;
+                }
+            }
+
+            &:nth-child(3){
+                margin-top: 3rem;
+            }
+        }
+    }
+}
