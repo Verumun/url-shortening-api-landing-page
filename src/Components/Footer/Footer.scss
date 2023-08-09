@@ -64,3 +64,11 @@
     }
 }
 
+@media (max-width: 716px){
+    .footer{
+        &-navigation{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

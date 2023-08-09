@@ -34,3 +34,21 @@
         padding: 3rem 2rem;
     }
 }
+
+@media (max-width: 425px){
+    .main{
+        .header-content{
+            h2{
+                font-size: 1.8rem;
+            }
+
+            p{
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    
+}

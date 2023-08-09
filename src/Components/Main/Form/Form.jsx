@@ -11,7 +11,7 @@ const Form =()=> {
                     <input type="text" placeholder='Shorten a link here..' />
                     <div className="error"></div>
                 </div>
-                <button>Shorten it!</button>
+                <button className='shorten'>Shorten it!</button>
             </form>
         </div>
     </div>
