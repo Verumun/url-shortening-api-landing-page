@@ -1,0 +1,49 @@
+@import '../../../sass/variables';
+
+.result-wrapper{
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    // padding: 1rem 0;
+
+    hr{
+        background-color: rgba(128, 128, 128, 0.009);
+        // outline: none;
+    }
+
+    .inputed-link, .flex{
+        padding: 1rem;
+    }
+    
+    .inputed-link{
+        color: $Very-Dark-Violet;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        // line-height: 2;
+
+        .shortened-link{
+            color: $Cyan;
+            font-weight: 100;
+            margin-bottom: 1rem;
+        }
+
+        button{
+            outline: none;
+            background-color: $Cyan;
+            border: none;
+            padding: .5rem 0;
+            border-radius: .25rem;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            &.copied{
+                background-color: $Dark-Violet;
+            }
+        }
+    }
+}

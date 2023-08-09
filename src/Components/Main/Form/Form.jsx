@@ -1,6 +1,7 @@
 import React from 'react'
 import './Form.scss'
 import backgroundImage from '../../../images/bg-boost-desktop.svg'
+import Result from './Result'
 
 const Form =()=> {
   return (
@@ -13,7 +14,10 @@ const Form =()=> {
                 </div>
                 <button className='shorten'>Shorten it!</button>
             </form>
+            
         </div>
+
+        <Result/>
     </div>
   )
 }
