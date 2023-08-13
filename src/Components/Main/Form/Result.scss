@@ -7,7 +7,9 @@
     // padding: 1rem 0;
 
     hr{
-        background-color: rgba(128, 128, 128, 0.009);
+        background-color: rgba(128, 128, 128, 0.305);
+        height: 1px;
+        border: none;
         // outline: none;
     }
 
@@ -28,13 +30,13 @@
             color: $Cyan;
             font-weight: 100;
             margin-bottom: 1rem;
-        }
+        } 
 
         button{
             outline: none;
             background-color: $Cyan;
             border: none;
-            padding: .5rem 0;
+            padding: .5rem 2rem;
             border-radius: .25rem;
             color: #fff;
             font-size: 1.1rem;
@@ -42,8 +44,28 @@
             cursor: pointer;
 
             &.copied{
-                background-color: $Dark-Violet;
+              background-color: $Dark-Violet;
             }
+        }
+    }
+}
+
+@media (min-width:768px){ 
+    .result-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        hr{display: none;}
+        .flex{
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            .shortened-link{margin-bottom: initial;}
+
+            // button{
+            //     padding: ;
+            // }
         }
     }
 }

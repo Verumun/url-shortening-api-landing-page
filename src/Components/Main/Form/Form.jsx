@@ -1,6 +1,6 @@
 import React from 'react'
 import './Form.scss'
-import backgroundImage from '../../../images/bg-boost-desktop.svg'
+// import backgroundImage from '../../../images/bg-boost-desktop.svg'
 import Result from './Result'
 
 const Form =()=> {
