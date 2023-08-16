@@ -95,12 +95,13 @@ const Form = () => {
   const [error, setError] = useState("");
 
   const handleFormSubmit = async (e) => {
+    // Prevents default submission
     e.preventDefault();
 
     // Basic URL validation
     const urlRegex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([-.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i;
     if (!urlRegex.test(inputValue)) {
-      setError("Invalid URL");
+      setError("Please add a link");
       return;
     }
 
